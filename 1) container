@@ -1,0 +1,28 @@
+1) container
+2) 2 divs on left right 
+3) main parent is pin:true
+4) on scroll line character going down white scrolling and from
+   timeline its changing its text on a gsap 
+   while same time images too with the same elem we're
+   passing in text and line !
+
+
+- Is section mein ek main container hoga jo ScrollTrigger ke 
+saath pin:true rahega.
+
+- Container ke andar 2 divs honge:
+Left side → Text content + vertical line
+Right side → Images
+
+Jab user scroll karega:
+Left side wali vertical line par ek white indicator/character 
+niche move karega,jaise progress show ho rahi ho.
+Usi scroll progress ke according text change hota rahega 
+(GSAP timeline se).Saath hi same timeline mein:
+Right side ki images bhi change hongi.
+Har text section ke saath uski corresponding image display hogi.
+
+- Matlab ek hi GSAP timeline scroll ko control karegi:
+Line Progress → Text Change → Image Change, sab scroll ke 
+saath synchronize rahenge jab tak pinned section complete na ho 
+jaye.

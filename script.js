@@ -38,7 +38,6 @@ let tl = gsap.timeline({
         end:"+=800",
         scrub:2,
         pin:true,
-        markers:true
     }
 });
 
@@ -55,22 +54,22 @@ tl.from(".about h1 span",{
 
 }, "<50%");
 
-// let tl = gsap.timeline({
-//     scrollTrigger:{
-//         trigger:".about",
-//         markers:true,
-//         start:"top top",
-//         end:"+=500",
-//         pin:true,
-//         scrub:2
-//     }
-// })
-// tl.to(".about svg",{
-//     scale:0.7,
-//     filter:"blur(30px)"
-// })
-// tl.to(".about h1",{
-//     opacity:1
-// },"<50%")
+let progress = gsap.timeline({
+    scrollTrigger:{
+          trigger:".vision",
+          start:"top top",
+          end:"+=2000",
+          pin:true,
+          scrub:2
+    }
+})
+
+progress.to(".progress-bar-line img",{
+    top:"100%"
+},"harsh")
+
+progress.to(".progress-fill",{
+    height:"100%"
+},"harsh")
 
 
