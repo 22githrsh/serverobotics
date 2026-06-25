@@ -216,13 +216,7 @@ header {
   width: 60%;
   text-align: start;
 }
-.right-vision{
-  height: 100%;
-  width: 50%;
-  background-color: beige;
 
-
-}
 .progress-bar-line{
   height: 70vh;
   width: 4px;
@@ -246,6 +240,49 @@ header {
   background-color: #61E5C0;
   width: 100%;
 }
+
+
+.vision-text-container{
+  margin-left: 10%;
+  font-family: roobertregular;
+  position: absolute;
+  opacity: 0;
+}
+
+.vtc1{
+  opacity: 1;
+}
+.vision-text-container h1{
+  margin-bottom: 2%;
+}
+.right-vision{
+  height: 100%;
+  width: 50%;
+  background-color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.image-container{
+  height: 80%;
+  width: 80%;
+  background-color: red;
+  border-radius: 20px;
+  overflow: hidden;
+ 
+
+}
+ .image-scroll-div{
+  width: 100%;
+}
+.image-scroll-div img{
+    display: block;
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+}
+
 .faq{
   height: 100vh;
   width: 100%;
