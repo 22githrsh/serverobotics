@@ -126,6 +126,7 @@ header {
   flex-direction: column;
   padding-bottom: 50px;
   padding-left: 10px;
+  z-index: 9999;
 }
 
 .servebtn {
@@ -258,7 +259,7 @@ header {
 .right-vision{
   height: 100%;
   width: 50%;
-  background-color: beige;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -267,10 +268,9 @@ header {
 .image-container{
   height: 80%;
   width: 80%;
-  background-color: red;
+
   border-radius: 20px;
   overflow: hidden;
- 
 
 }
  .image-scroll-div{
@@ -283,8 +283,78 @@ header {
   object-fit: cover;
 }
 
-.faq{
-  height: 100vh;
+.Parallax{
+  height: 140vh;
   width: 100%;
-  background-color: brown;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+flex-direction: column;
+justify-content: center;
+font-family: roobertregular;
+position: relative;
+overflow: hidden;
+}
+.Parallax h1{
+  text-align: center;
+  font-size: 60px;
+  line-height: 55px;
+  margin-bottom: 3%;
+}
+
+.Parallax p{
+  font-size: 22px;
+}
+.parallax-images{
+  height: 300px;
+  width: 250px;
+  background-color: lavender;
+  position: absolute;
+  border-radius: 10px;
+
+overflow: hidden;}
+.parallax-images video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.pi1{
+  top: 5%;
+  left:15%;
+}
+.pi2{
+  height: 270px;
+  width: 250px;
+  top: 7%;
+  right: 15%;
+}
+
+.pi3{
+  top: 40%;
+  left:0.5%;
+}
+
+.pi4{
+  top: 50%;
+  right:-5%;
+}
+.pi5{
+  bottom: 1%;
+  left: 20%;
+}
+.pi6{
+  bottom: 5%;
+ right: 20%;
+ height: 150px;
+}
+
+.canvas-section{
+    height:100vh;
+}
+
+canvas{
+    position:sticky;
+    top:0;
+    width:100vw;
+    height:100vh;
 }
